@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      .container {
+    display: grid;    
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px 350px 50px;
+}
+
+    header {
+    grid-column: span 12;
+    background-color: #2ecc71
+    }
+
+    header {
+    display: flex;
+}
+    header > div:nth-child(3) {
+        margin-left: auto;
+    }
+    aside {
+    grid-column: span 2;
+    background-color: #3498db
+    }
+    main {
+    grid-column: span 10;
+    background-color: #f1c40f
+    }
+    footer {
+    grid-column: span 12;
+    background-color: #e74c3c
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>Home</div>
+            <div>Search</div>
+            <div>Logout</div>
+        </header>
+        <aside>MENU</aside>
+        <main>CONTENT</main>
+        <footer>FOOTER</footer>
+    </div>
+</body>
+</html>
